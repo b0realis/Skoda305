@@ -25,6 +25,8 @@ a touchscreen or a gamepad.
 - SLIKA picture toggle (key S / SELECT, or tap the top-right label on the
   title): OSTRA = integer scaling, POLNA = fractional, fills the screen.
   Default POLNA on touchscreens, OSTRA on desktops; persisted.
+- English is now the default language (it was Slovenian); a language you
+  picked is still remembered.
 - Boot picture: the stock Godot logo gives way to a VGA "Powered by
   Godot" scene in the game's dusk palette (also the web loading screen),
   held for 1.5 s so it registers.

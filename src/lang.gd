@@ -7,7 +7,7 @@ const LANGS := ["en", "sl", "de", "it"]
 const LANG_NAMES := {"en": "ENGLISH", "sl": "SLOVENSKO", "de": "DEUTSCH", "it": "ITALIANO"}
 const CFG_PATH := "user://settings.cfg"
 
-var cur := "sl"
+var cur := "en"   # default for new players; the choice persists
 
 const T := {
 	"subtitle": {
@@ -316,7 +316,7 @@ const T := {
 func _ready() -> void:
 	var cfg := ConfigFile.new()
 	if cfg.load(CFG_PATH) == OK:
-		var saved = cfg.get_value("game", "lang", "sl")
+		var saved = cfg.get_value("game", "lang", "en")
 		if saved is String and saved in LANGS:
 			cur = saved
 

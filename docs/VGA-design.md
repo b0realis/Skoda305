@@ -86,10 +86,16 @@ Rules:
 
 ## 6. Screen anatomy
 
-**Boot ritual** (any key skips): black screen → gold caduceus logo with
-studio name and a fake "(C) 1994" → full-bleed sepia period photograph with
-a caption bar. Logo fades with ordered dither; the photograph cuts in clean
-(dither dots over a photo read as dirt).
+**Boot ritual**: while the engine loads, a VGA "Powered by Godot" picture
+in the game's own dusk palette (the engine's boot image — held 1.5 s, not
+skippable; centered at an exact integer scale on the near-black clear
+color, pillarboxed like a 4:3 picture on a CRT). Then, any key skipping:
+black screen → gold caduceus logo with studio name and a fake "(C) 1994" →
+full-bleed sepia period photograph with a caption bar. Logo fades with
+ordered dither; the photograph cuts in clean (dither dots over a photo
+read as dirt). A supplied picture is rebuilt on its true pixel grid with
+one small palette before it ships — no soft, million-color art on a VGA
+screen.
 
 **Title**: three vertical zones. Left — the "archive photo" in a museum
 plate (white inner frame, dark outer, caption beneath). Right — the menu
@@ -126,11 +132,16 @@ table right (labels dim, values bone), team-color accent under the title.
 - **Flags (language)**: 12×9, procedural; add a distinguishing mark when
   two flags would collide at that size.
 - **Blink cadences**: 0.5 s menu cursor, 0.8 s prompts. Nothing else blinks.
-- **Touch buttons** (mobile builds): steel panels in the standard bevel,
-  ≥ 24 px (~8 mm on a phone), pressed state = inverted bevel + darker
-  fill; laid along the bottom edge in thumb clusters (angle left, power
-  right, weapon + FIRE center, MENU tucked under the HUD). They appear
-  only on touch devices — desktop players never see them.
+- **Touch buttons** (every build, on touchscreens): steel panels in the
+  standard bevel, ≥ 24 px (~8 mm on a phone), pressed state = inverted
+  bevel + darker fill; laid along the bottom edge in thumb clusters (angle
+  left, power right, weapon + FIRE center, MENU tucked under the HUD).
+  They appear after the first touch — keyboard players, even on
+  touchscreen laptops, never see them — and a button turns see-through
+  (40%) when a gun stands behind it: a control must never hide the game.
+- **Device-aware hints**: every on-screen line that names a key has a
+  gamepad twin (TAB → X, SPACE → A, ESC → B/START, Xbox naming); the hints
+  follow whichever device was used last and switch back on a keypress.
 
 ## 8. Motion & feedback vocabulary
 
@@ -226,6 +237,12 @@ Usage rules:
     the HUD); the top of the screen is for information, the bottom for
     terrain — and on touch devices, for thumbs. Two-step confirmation
     (select, then activate) protects dense menus from fat fingers.
+11. **Every input, one game**: keyboard, mouse, touch and gamepad drive
+    the same actions through the same key events, so precision repeat and
+    tap-vs-hold feel identical everywhere. Discrete actions fire on the
+    press itself (no tap is too short to count). Never put a destructive
+    action on an easy button: B goes back in the manual but never quits
+    the game or abandons a battle — START is the deliberate menu key.
 
 ## 11. Historical & cultural design
 
@@ -301,7 +318,8 @@ as a veil of reverence: recognizable, dignified, unmistakably past.
    identity, UX rules, boot ritual, banner/dialog spec, blink cadences.
 2. Re-theme: palette ramps (new sky, new terrain materials), team accents,
    sprites, backdrop painter, photographs, captions, music key/tempo.
-3. Re-verify: sprite contrast on every background; widest-language layout;
+3. Re-verify: sprite contrast on every background; widest-language layout
+   (`tools/text_check.tscn` measures every string in every language);
    any new random process (histogram it); every screen judged at native
    320×200.
 4. The three pillars (§1) arbitrate every argument. When in doubt: would

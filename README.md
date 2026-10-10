@@ -33,8 +33,9 @@ Games caduceus splash → the archive photo splash → title (any key skips).
 - **1 IGRALEC / 1 PLAYER** — you (Avstro-Ogrska) against the prescription software (Italija).
 - **2 IGRALCA / 2 PLAYERS** — hotseat duel, taking turns on one keyboard.
 - First to **3 rounds** wins the war.
-- **Languages**: English, Slovenian, German, Italian — pick the flag on the
-  title screen (arrow keys on the language row); the choice is remembered.
+- **Languages**: English (the default), Slovenian, German, Italian — pick
+  the flag on the title screen (arrow keys on the language row); the choice
+  is remembered.
 - **School** (`SOLA`): a five-page field manual — how wind bends the
   trajectory (diagram plotted from the game's real equations, formulas
   included), the wind flag, powder charges, plus fact sheets for both guns

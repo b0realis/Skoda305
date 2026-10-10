@@ -167,6 +167,8 @@ Build small ramps per material, muted and warm-grey, ~4 steps each:
 - One dictionary: `key -> {lang -> string}`; `L.t(key)` with English
   fallback; language list + native display names; choice persisted with
   `ConfigFile` (`user://settings.cfg`).
+- Default to **English** for a public release — the home language is one
+  flag away, and a saved choice always wins over the default.
 - Numbers/formulas stay universal; compose with `%` and localized labels.
 - **Flags as 12×9 procedural textures** (tricolors are loops; add a
   distinguishing mark when two flags collide — our Slovene flag needed a
