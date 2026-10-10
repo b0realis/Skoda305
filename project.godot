@@ -1,0 +1,52 @@
+; Engine configuration file.
+; Možnar M.11 — Soška fronta
+; Scorched Earth clone, WWI Isonzo Front theme, VGA 320x200.
+
+config_version=5
+
+[application]
+
+config/name="Skoda 305"
+config/version="1.10.0"
+config/description="Scorched Earth clone. WWI Soška fronta. VGA 320x200, DOS style."
+run/main_scene="res://main.tscn"
+config/features=PackedStringArray("4.7")
+config/icon="res://icon.png"
+boot_splash/bg_color=Color(0.05, 0.05, 0.06, 1)
+boot_splash/image="res://assets/img/boot_splash.png"
+boot_splash/stretch_mode=0
+boot_splash/use_filter=false
+boot_splash/minimum_display_time=1500
+config/windows_native_icon="res://assets/icon/moznar-m11.ico"
+
+[autoload]
+
+G="*res://src/gamestate.gd"
+L="*res://src/lang.gd"
+Vga="*res://src/vga.gd"
+Pix="*res://src/pixfont.gd"
+Sfx="*res://src/sfx.gd"
+Touch="*res://src/touch.gd"
+Pad="*res://src/pad.gd"
+
+[input_devices]
+
+pointing/emulate_mouse_from_touch=false
+
+[display]
+
+window/size/viewport_width=320
+window/size/viewport_height=200
+window/size/window_width_override=1280
+window/size/window_height_override=800
+window/stretch/mode="viewport"
+window/stretch/aspect="keep"
+window/stretch/scale_mode="integer"
+
+[rendering]
+
+renderer/rendering_method="gl_compatibility"
+renderer/rendering_method.mobile="gl_compatibility"
+textures/vram_compression/import_etc2_astc=true
+textures/canvas_textures/default_texture_filter=0
+environment/defaults/default_clear_color=Color(0.05, 0.05, 0.06, 1)

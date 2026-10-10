@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Name=Skoda 305
+Comment=Scorched Earth clone on the WWI Isonzo Front
+Exec=skoda-305-linux-x86_64
+Icon=skoda-305
+Categories=Game;ArcadeGame;
+Terminal=false
