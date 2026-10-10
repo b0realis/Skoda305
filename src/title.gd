@@ -1,7 +1,7 @@
 extends Node2D
 ## Title screen: dithered alpine backdrop, chunky title, a sepia "archive
-## photograph" of the Škoda 30.5 cm M.11 (painted in code, framed like a
-## museum plate — after the Sv. Lucija assembly photo), menu and language
+## photograph" of the Skoda 30.5 cm M.11 (painted in code, framed like a
+## museum plate — after the Santa Lucia assembly photo), menu and language
 ## selection with pixel flags.
 
 signal start_game(mode: int)
@@ -159,7 +159,7 @@ func _draw() -> void:
 	draw_rect(Rect2(px - 4, py - 4, pw + 8, ph + 8), Color(Vga.UI_LO))
 	draw_rect(Rect2(px - 3, py - 3, pw + 6, ph + 6), Color("d8cfc0"))
 	draw_texture_rect(photo_tex, Rect2(px, py, pw, ph), false)
-	Pix.draw_shadow_c(self, px + pw / 2.0, py + ph + 8, "SV. LUCIJA, 1916", dim, dark)
+	Pix.draw_shadow_c(self, px + pw / 2.0, py + ph + 8, L.t("title_cap"), dim, dark)
 
 	# menu
 	var mx := 192.0

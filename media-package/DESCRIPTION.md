@@ -4,8 +4,8 @@
 
 ---
 
-**The year is 1916. High above the emerald Soča, two siege guns wake on
-opposite ridges — the Austro-Hungarian Škoda 30.5 cm mortar and Italy's
+**The year is 1916. High above the emerald Isonzo, two siege guns wake on
+opposite ridges — the Austro-Hungarian Skoda 30.5 cm mortar and Italy's
 Obice da 305. Between them lie limestone peaks, snow, drifting wind — and
 mathematics.**
 
@@ -28,14 +28,14 @@ plate from the war, rendered in sepia the way the era remembered itself.
 - **Wind that lives**: it drifts and gusts every shot; read the signal
   flag, listen to your soldier's estimate in knots, or switch on the
   **advanced ballistic calculator** and argue with physics directly
-- **Two historical guns**, faithfully unequal: the Škoda 30.5 cm Mörser
+- **Two historical guns**, faithfully unequal: the Skoda 30.5 cm Mörser
   M.11 against the longer-reaching Obice da 305/17
 - **1 player** against the prescription software, or **2 players** at one
   keyboard, first to three rounds
-- **ŠOLA** — a field manual with the game's real equations, the wind flag
+- **SCHOOL** — a field manual with the game's real equations, the wind flag
   lesson, and fact sheets with period photographs and verified
   specifications
-- **Four languages**: English, slovenščina, Deutsch, italiano
+- **Four languages**: English, Slovenian, German, Italian
 - An original melancholic march in A minor, and silence where it matters
 
 ### In memoriam
@@ -43,14 +43,14 @@ plate from the war, rendered in sepia the way the era remembered itself.
 This game is set on a real front. Between 1915 and 1917, twelve battles of
 the Isonzo were fought through these mountains, and hundreds of thousands
 of soldiers of many nations — Slovenes, Italians, Austrians, Hungarians,
-Czechs, Croats, Bosnians, and more — never came home from the Soča.
+Czechs, Croats, Bosnians, and more — never came home from the Isonzo.
 
 This small game is played in their mountains. To all of them, on every
 side of the wire: **respect, and eternal peace.**
 
-*Vsem padlim na soški fronti — večni mir in spomin.*
+*To all who fell on the Isonzo Front — eternal peace and remembrance.*
 
-May the only shells that ever again fly over the Soča be made of pixels.
+May the only shells that ever again fly over the Isonzo be made of pixels.
 
 ### Download, install & run
 

@@ -25,9 +25,9 @@ const SIM_DT := 1.0 / 120.0   # shell flight is integrated in fixed slices
 const CHARGES := [32.0, 50.0, 66.0, 82.0, 96.0]
 
 const WEAPONS := [
-	{"label": "GRANATA", "r": 7.0, "dmg": 32.0, "ammo": -1, "vmul": 1.0, "px": 2, "split": 0},
+	{"label": "SHELL", "r": 7.0, "dmg": 32.0, "ammo": -1, "vmul": 1.0, "px": 2, "split": 0},
 	{"label": "380KG", "r": 14.0, "dmg": 65.0, "ammo": 2, "vmul": 0.88, "px": 3, "split": 0},
-	{"label": "SRAPNEL", "r": 5.0, "dmg": 16.0, "ammo": 2, "vmul": 1.0, "px": 2, "split": 5},
+	{"label": "SHRAPNEL", "r": 5.0, "dmg": 16.0, "ammo": 2, "vmul": 1.0, "px": 2, "split": 5},
 ]
 
 enum St {INTRO, TURN_START, AIM, FIRING, RESOLVE, DEATH, ROUND_OVER}
@@ -330,7 +330,7 @@ func _cycle_weapon() -> void:
 	Sfx.play("click", -6.0)
 
 
-## Next weapon that still has ammo (GRANATA never runs out).
+## Next weapon that still has ammo (the plain SHELL never runs out).
 func _select_loaded(g: Node) -> void:
 	for i in range(1, WEAPONS.size() + 1):
 		var w: int = (g.weapon + i) % WEAPONS.size()

@@ -1,7 +1,7 @@
-# Škoda 305 — Soška fronta
+# Skoda 305 — Isonzo Front
 
-A minimal **Scorched Earth** clone set on the WWI Isonzo Front (soška
-fronta). Austria-Hungary fields the **Škoda 30.5 cm Mörser M.11** siege
+A minimal **Scorched Earth** clone set on the WWI Isonzo Front.
+Austria-Hungary fields the **Skoda 30.5 cm Mörser M.11** siege
 mortar, Italy answers with the **Obice da 305**. Minimal design, minimal
 features, maximal fun. Official title: **Skoda 305**.
 
@@ -30,13 +30,13 @@ Games caduceus splash → the archive photo splash → title (any key skips).
 
 ## Game
 
-- **1 IGRALEC / 1 PLAYER** — you (Avstro-Ogrska) against the prescription software (Italija).
-- **2 IGRALCA / 2 PLAYERS** — hotseat duel, taking turns on one keyboard.
+- **1 PLAYER** — you (Austria-Hungary) against the prescription software (Italy).
+- **2 PLAYERS** — hotseat duel, taking turns on one keyboard.
 - First to **3 rounds** wins the war.
 - **Languages**: English (the default), Slovenian, German, Italian — pick
   the flag on the title screen (arrow keys on the language row); the choice
   is remembered.
-- **School** (`SOLA`): a five-page field manual — how wind bends the
+- **School**: a five-page field manual — how wind bends the
   trajectory (diagram plotted from the game's real equations, formulas
   included), the wind flag, powder charges, plus fact sheets for both guns
   with period photographs and historical specifications. On touchscreens a
@@ -44,15 +44,15 @@ Games caduceus splash → the archive photo splash → title (any key skips).
 - **Hard mode** (key `H` on the title screen): power is restricted to the
   M.11's five historical propellant charges (1-4, plus a 5th for light
   shells only) — pick a charge and lay the gun with elevation, like a real
-  battery. See SOLA page 3 for the history.
+  battery. See SCHOOL page 3 for the history.
 - **Assist** (key `P` on the title screen): toggles the advanced ballistic
   calculator — a live panel while aiming that computes flight time and the
   exact wind drift in pixels for your current settings, plus last-shot
   feedback: forecast drift vs the drift your shell really picked up. Saved
   between runs.
-- **Picture** (`SLIKA`, key `S` / SELECT or tap the top-right label on the title):
-  OSTRA = integer scaling, pixel-perfect with borders; POLNA = fractional,
-  fills the screen. Defaults to POLNA on touchscreens, OSTRA on desktops;
+- **Picture** (key `S` / SELECT, or tap the top-right label on the title):
+  SHARP = integer scaling, pixel-perfect with borders; FULL = fractional,
+  fills the screen. Defaults to FULL on touchscreens, SHARP on desktops;
   saved between runs.
 
 Turn-based artillery: set angle and power, mind the **wind**, and lob shells
@@ -65,12 +65,12 @@ away falls and takes damage.
 
 | Key | Action |
 |---|---|
-| ← / → | barrel angle (`KOT`) |
-| ↑ / ↓ | powder charge (`MOC`) |
+| ← / → | barrel angle (`ANGLE`) |
+| ↑ / ↓ | powder charge (`POWER`) |
 | Shift | fine adjustment |
-| Tab (tap) | cycle weapon (`OROZJE`) |
+| Tab (tap) | cycle weapon (`WEAPON`) |
 | Tab (hold) | wind helper: signal flag + soldier's estimate |
-| Space / Enter | fire (`OGENJ`) |
+| Space / Enter | fire (`FIRE`) |
 | Esc | back to menu / quit |
 
 ### Touch controls
@@ -88,11 +88,11 @@ a gun stands behind it.
 | < / > (hold) | barrel angle |
 | + / - (hold) | powder charge, auto-repeat |
 | weapon (tap / hold) | cycle weapon / wind flag |
-| OGENJ | fire |
-| MENI | back to menu |
+| FIRE | fire |
+| MENU | back to menu |
 
 Menus: the first tap highlights a row, the second confirms (rows are only
-~3.6 mm tall on a phone). SOLA: tap the left edge = back, anywhere else =
+~3.6 mm tall on a phone). SCHOOL: tap the left edge = back, anywhere else =
 forward. Splash and round-over banners: tap anywhere.
 
 ### Game controllers
@@ -101,7 +101,7 @@ Any gamepad works (Xbox names; other pads by position — bottom face
 button = A). Like touch, the controller presses the keyboard's keys, and
 the on-screen hints switch to button names while you use it.
 
-| Button | Battle | Title / SOLA |
+| Button | Battle | Title / SCHOOL |
 |---|---|---|
 | D-pad / left stick | angle, power | navigate, pages |
 | A | fire | confirm / next |
@@ -109,8 +109,8 @@ the on-screen hints switch to button names while you use it.
 | Y | same as X | title: assist |
 | LB / RB, triggers | fine adjustment | — |
 | START | menu | confirm |
-| SELECT | — | title: picture (SLIKA) |
-| B | — | SOLA: back |
+| SELECT | — | title: picture toggle |
+| B | — | SCHOOL: back |
 
 B never quits the game or abandons a battle (use START for the menu).
 
@@ -118,18 +118,18 @@ B never quits the game or abandons a battle (use START for the menu).
 
 | | crater | damage | ammo/round |
 |---|---|---|---|
-| GRANATA | small | 32 | ∞ |
+| SHELL | small | 32 | ∞ |
 | 380KG | huge | 65 | 2 |
-| SRAPNEL | 5 bomblets | 16 each | 2 |
+| SHRAPNEL | 5 bomblets | 16 each | 2 |
 
 ## Style
 
 DOS 6.22 / VGA mood, Bitmap Brothers reference: native **320×200** viewport,
-integer-scaled to the window (or fractionally filled, see SLIKA), fixed palette, ordered (Bayer) dithering in the
+integer-scaled to the window (or fractionally filled, see Picture), fixed palette, ordered (Bayer) dithering in the
 sky and in the splash fades, chunky 5-px pixel font. All UI text avoids
-diacritics — CP437 didn't have čšž (or umlauts) either. The title-screen
+diacritics — CP437 had no carons (or umlauts) either. The title-screen
 "photograph" is painted in code after the wartime photo of an M.11 being
-assembled at Sv. Lucija (Most na Soči); the boot splash uses the Library of
+assembled at Santa Lucia on the Isonzo; the boot splash uses the Library of
 Congress "War of the Nations" photo (public domain, 1919) quantized to a
 16-shade sepia palette. The title tune is an original melancholic march in
 A minor (square-wave lead, march bass, noise snare), generated to WAV.
@@ -202,12 +202,12 @@ Two reusable guides for this and future VGA-style games in the series:
 - `SHOT_DIR=/tmp godot --path . -- --shots` — muted Rx demo that saves
   screenshots.
 - `-- --touchui` — forces the touch layer on a desktop (testing the touch
-  SOLA page and menus; battle buttons only show for human players).
+  SCHOOL page and menus; battle buttons only show for human players).
 
 Mechanics referenced from the classic *Scorched Earth* (and the
 [donovani/scorched-earth](https://gitlab.com/donovani/scorched-earth)
 restoration project); all code here is original. Historical background:
-[Društvo Soška fronta](https://drustvo-soskafronta.si/).
+[Battles of the Isonzo](https://en.wikipedia.org/wiki/Battles_of_the_Isonzo).
 
 ## License
 

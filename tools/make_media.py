@@ -93,10 +93,11 @@ NAMED_SHOTS = {
     "shot_title.png": "menu-title.png",
     "shot_splash1.png": "splash-logo.png",
     "shot_splash2.png": "splash-photo.png",
-    "shot_help.png": "sola-1-ballistics.png",
-    "shot_help2.png": "sola-2-wind-flag.png",
-    "shot_help3.png": "sola-3-skoda-m11.png",
-    "shot_help4.png": "sola-4-obice-305.png",
+    "shot_help.png": "school-1-ballistics.png",
+    "shot_help2.png": "school-2-wind-flag.png",
+    "shot_help3.png": "school-3-hard-charges.png",
+    "shot_help4.png": "school-4-skoda-m11.png",
+    "shot_help5.png": "school-5-obice-305.png",
     "shot_banner.png": "round-intro.png",
     "shot_aim.png": "assist-calculator.png",
 }
@@ -113,9 +114,12 @@ def screenshots(shot_dirs):
         src = os.path.join(shot_dirs[0], src_name)
         if os.path.exists(src):
             shutil.copy(src, os.path.join(out, dst_name))
-    flag = os.path.join(ROOT, "docs", "wind_helper.png")
-    if os.path.exists(flag):
-        shutil.copy(flag, os.path.join(out, "wind-flag-helper.png"))
+    # human-only helpers never appear in the Rx demo: take the docs shots
+    for doc, dst in [("wind_helper.png", "wind-flag-helper.png"),
+                     ("calculator.png", "assist-calculator.png")]:
+        p = os.path.join(ROOT, "docs", doc)
+        if os.path.exists(p):
+            shutil.copy(p, os.path.join(out, dst))
 
     scored = []
     for d in shot_dirs:
@@ -133,6 +137,8 @@ def screenshots(shot_dirs):
 
 def icons():
     for f in glob.glob(os.path.join(ROOT, "assets", "icon", "*")):
+        if f.endswith(".import"):
+            continue   # Godot's import records stay with the project
         shutil.copy(f, os.path.join(MP, "icons", os.path.basename(f)))
     print("icons copied")
 

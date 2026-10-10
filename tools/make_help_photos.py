@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Convert the SOLA weapon-page photographs to VGA sepia, same recipe as the
+"""Convert the SCHOOL weapon-page photographs to VGA sepia, same recipe as the
 boot splash (32 shades, no dithering). Underlying photographs are WWI-era
 (public domain).
 

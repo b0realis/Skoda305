@@ -1,11 +1,11 @@
 #!/usr/bin/env python3
-"""Generate the game icon: Škoda M.11 silhouette against a dithered sepia
+"""Generate the game icon: Skoda M.11 silhouette against a dithered sepia
 sky and a snow-capped peak, 32x32 pixel art in the game palette, scaled
 (nearest) to every reusable size.
 
 Outputs:
-  assets/icon/moznar-m11-{16,32,48,64,128,256,512}.png
-  assets/icon/moznar-m11.ico        (16..256, for Windows reuse)
+  assets/icon/skoda-305-{16,32,48,64,128,256,512}.png
+  assets/icon/skoda-305.ico        (16..256, for Windows reuse)
   icon.png                          (256, Godot project/window icon)
 
 Run:  python3 tools/make_icon.py   (needs Pillow)
@@ -94,10 +94,10 @@ def main():
     sizes = [16, 32, 48, 64, 128, 256, 512]
     for s in sizes:
         im = base.resize((s, s), Image.NEAREST)
-        im.save(os.path.join(OUT, "moznar-m11-%d.png" % s))
+        im.save(os.path.join(OUT, "skoda-305-%d.png" % s))
     big = base.resize((256, 256), Image.NEAREST)
     big.save(os.path.join(ROOT, "icon.png"))
-    big.save(os.path.join(OUT, "moznar-m11.ico"),
+    big.save(os.path.join(OUT, "skoda-305.ico"),
              sizes=[(16, 16), (32, 32), (48, 48), (64, 64), (128, 128), (256, 256)])
     print("wrote icon set to", OUT, "and icon.png")
 

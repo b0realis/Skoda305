@@ -78,9 +78,9 @@ CONTROLS='CONTROLS
             charges), S picture (sharp/full), arrows + ENTER, flags = language.
   Gamepad   D-pad / left stick angle + power, A fire, X tap = weapon,
             X hold = wind flag, LB/RB fine, START menu.
-            On the title: Y assist, X hard mode, SELECT picture, B back (SOLA).
+            On the title: Y assist, X hard mode, SELECT picture, B back (SCHOOL).
   Touch     on-screen buttons appear while aiming once you touch the screen.
-  SOLA      the field manual on the title screen explains wind, charges
+  SCHOOL    the field manual on the title screen explains wind, charges
             and both guns.'
 
 LICENCE='LICENCE
@@ -94,7 +94,7 @@ LICENCE='LICENCE
 readme() {  # readme <stage> <platform> <start-text>
 	cat >"$1/README.txt" <<README
 SKODA 305 $VERSION — $2
-A minimal Scorched Earth clone on the WWI Isonzo Front (Soska fronta):
+A minimal Scorched Earth clone on the WWI Isonzo Front:
 the Skoda 30.5 cm M.11 siege mortar against the Obice da 305, in VGA
 320x200. One player against the computer, or two on one machine.
 Source code: https://github.com/b0realis/Skoda305
@@ -121,7 +121,7 @@ linux_package() {  # linux_package <platform> <binary> <start-text> <run.sh body
 	cp -p "$EXP/$2" "$stage/$2"
 	chmod +x "$stage/$2"
 	stage_common "$stage"
-	cp "$ROOT/assets/icon/moznar-m11-256.png" "$stage/skoda-305.png"
+	cp "$ROOT/assets/icon/skoda-305-256.png" "$stage/skoda-305.png"
 	cp "$ROOT/dist/skoda-305.desktop" "$stage/skoda-305.desktop"
 	cp "$ROOT/dist/install.sh" "$stage/install.sh"
 	chmod +x "$stage/install.sh"

@@ -78,6 +78,11 @@ func _process(_delta: float) -> void:
 		_capture("help3")
 	elif shot_frame == 275:
 		_capture("help4")
+	elif shot_frame == 277:   # the second gun's fact sheet
+		if current != null and current.get("pages") != null:
+			current.page = current.pages.find("gun") + 1
+	elif shot_frame == 283:
+		_capture("help5")
 	elif shot_frame == 285:
 		_start_match(1)
 	elif shot_frame == 325:

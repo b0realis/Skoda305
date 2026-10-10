@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b0tykfowsmn2t"
-path="res://.godot/imported/moznar-m11-16.png-7e1208884043d64e56daecbc9f24a1f0.ctex"
+uid="uid://bh8qiob6hibku"
+path="res://.godot/imported/skoda-305-256.png-49f2e7a10ed53ded337d7ccd945b2a0d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/icon/moznar-m11-16.png"
-dest_files=["res://.godot/imported/moznar-m11-16.png-7e1208884043d64e56daecbc9f24a1f0.ctex"]
+source_file="res://assets/icon/skoda-305-256.png"
+dest_files=["res://.godot/imported/skoda-305-256.png-49f2e7a10ed53ded337d7ccd945b2a0d.ctex"]
 
 [params]
 

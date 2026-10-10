@@ -1,6 +1,6 @@
 # VGA-design.md — The Design System
 
-The visual, audio and interaction design of *Možnar M.11 — Soška fronta*,
+The visual, audio and interaction design of *SKODA 305 — Isonzo Front*,
 recorded as a reusable design system for further retro games in the series.
 Companion to `VGA-PLAYBOOK.md` (which covers the engineering *how*; this
 document is the *what and why*).
@@ -113,7 +113,7 @@ score center, aim numbers row two, weapon center, wind gauge right.
 bottom/right bevel, ×2 amber headline, ×1 lines, blinking press-key prompt
 (0.8 s cycle). Used identically for round intro, round end, victory.
 
-**ŠOLA (manual)**: page counter top-right, nav hint bottom. Page 1 —
+**SCHOOL (the field manual)**: page counter top-right, nav hint bottom. Page 1 —
 diagram plotted live from the game's real equations, formulas in-font,
 plain-words summary. Pages 2+ — fact sheets: photo plate left, label:value
 table right (labels dim, values bone), team-color accent under the title.
@@ -215,7 +215,7 @@ Usage rules:
    helpers.
 4. **Teach with the truth**: the manual plots the same equations the game
    integrates; the calculator's forecast is later compared against the
-   measured outcome (NAPOVED vs MERITEV) — the gap *is* the lesson.
+   measured outcome (PREDICTED vs MEASURED) — the gap *is* the lesson.
 5. **In-fiction voice**: help arrives as a soldier's spoken estimate, a
    signal flag, a field manual — never as a modern tooltip.
 6. **Fairness through randomness done right**: environment drifts each turn
@@ -246,12 +246,12 @@ Usage rules:
 
 ## 11. Historical & cultural design
 
-- Factions get their real equipment (Škoda 30.5 cm M.11 vs Obice da
+- Factions get their real equipment (Skoda 30.5 cm M.11 vs Obice da
   305/17), silhouettes distinct enough to identify at 14 px.
 - All specifications verified against references before they ship.
 - Photographs: see §12 — the full period-photograph treatment.
 - Four languages (EN/SL/DE/IT) as first-class citizens; Slovene themes and
-  places carry the identity (Soška fronta, Sv. Lucija, Doberdob...).
+  places carry the identity (the Isonzo Front, Santa Lucia, Doberdò...).
 - Gentle humor lives in the frame, not the subject: the fake "(C) 1994",
   "Prescription Games" — the war itself is treated with respect.
 - **Naming conventions**: the studio is *Prescription Games*; the computer
@@ -286,10 +286,10 @@ Error-diffusion dithering is banned on photos: the speckle reads as dirt.
 2. **Museum plate** — white inner frame, dark outer border, caption below;
    used on the title screen. Reads as a mounted archive print.
 3. **Fact-sheet plate** — photo left, label:value specification table
-   right; the encyclopedia page pattern (ŠOLA).
+   right; the encyclopedia page pattern (SCHOOL).
 
 **Captions** — always: place + date or a plain factual statement
-("SV. LUCIJA, 1916", "KARNIJA: OGENJ NA MALBORGHETTO"), localized, small
+("SANTA LUCIA, 1916", "CARNIA: FIRING ON MALBORGHETTO"), localized, small
 dim text. A photo without a caption is decoration; with one, it is a
 document.
 

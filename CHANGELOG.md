@@ -9,7 +9,7 @@ a touchscreen or a gamepad.
 - Game controllers: D-pad or left stick = angle/power and menu navigation,
   A = fire/confirm, X (or Y) = weapon (tap cycles, hold shows the wind
   flag), LB/RB or triggers = fine adjustment, START = menu. On the title:
-  Y = assist, X = hard mode, SELECT = picture toggle. B goes back in SOLA
+  Y = assist, X = hard mode, SELECT = picture toggle. B goes back in SCHOOL
   but never quits the game or abandons a battle. On-screen hints switch
   to button names while a controller is in use, and back on a keypress.
 - Touch controls: on touchscreens, VGA-style buttons appear while aiming
@@ -20,17 +20,17 @@ a touchscreen or a gamepad.
   turns see-through when a gun stands behind it.
 - Menus take direct taps — and mouse clicks on desktop: title rows
   (first tap highlights, second confirms), language flags, the
-  assist/hard hints, SOLA paging (left edge = back), splash skipping,
+  assist/hard hints, SCHOOL paging (left edge = back), splash skipping,
   round-over banners.
-- SLIKA picture toggle (key S / SELECT, or tap the top-right label on the
-  title): OSTRA = integer scaling, POLNA = fractional, fills the screen.
-  Default POLNA on touchscreens, OSTRA on desktops; persisted.
+- PICTURE toggle (key S / SELECT, or tap the top-right label on the
+  title): SHARP = integer scaling, FULL = fractional, fills the screen.
+  Default FULL on touchscreens, SHARP on desktops; persisted.
 - English is now the default language (it was Slovenian); a language you
   picked is still remembered.
 - Boot picture: the stock Godot logo gives way to a VGA "Powered by
   Godot" scene in the game's dusk palette (also the web loading screen),
   held for 1.5 s so it registers.
-- SOLA gains a touch-controls page (3/6) — shown only when the touch
+- SCHOOL gains a touch-controls page (3/6) — shown only when the touch
   controls are in use; desktops keep the five pages.
 - Mobile browsers: Godot's mouse-from-touch emulation is off (it delivered
   every tap twice), and on the web the title tune is re-triggered on the
@@ -53,10 +53,10 @@ Fixes:
 - ESC was ignored while the computer aimed.
 - Screen shake only ever grew within a round: after one 380KG blast,
   every shot's recoil shook at full strength.
-- After firing the last 380KG or SRAPNEL shell, the empty weapon stayed
+- After firing the last 380KG or SHRAPNEL shell, the empty weapon stayed
   selected and the next fire press only clicked.
-- Paging past the last SOLA page raised an index error.
-- A lone Shift/Alt/Ctrl (e.g. Alt+Tab) flipped SOLA pages, skipped the
+- Paging past the last SCHOOL page raised an index error.
+- A lone Shift/Alt/Ctrl (e.g. Alt+Tab) flipped SCHOOL pages, skipped the
   splash or dismissed the round-over banner.
 - Touch: a key could stay stuck after losing focus mid-hold or lifting
   one of two fingers; the MENU button covered the end of the soldier's
@@ -76,25 +76,25 @@ Fixes:
 ## 1.9.2 — 2026-07-27
 
 - The calculator gained an actionable line: under DX it now says
-  CILJAJ/AIM with an arrow pointing UPWIND by the drift amount — follow
+  AIM with an arrow pointing UPWIND by the drift amount — follow
   the green line instead of computing the correction in your head.
 
 ## 1.9.1 — 2026-07-27
 
-- Both gunners now read the same angle scale: KOT 0 = flat toward your
+- Both gunners now read the same angle scale: ANGLE 0 = flat toward your
   enemy, 90 = straight up, on either side of the valley (the right-hand
   player no longer sees mirrored 100-170 values).
-- SOLA: removed the accent underline that clipped the gun-page titles.
+- SCHOOL: removed the accent underline that clipped the gun-page titles.
 
 ## 1.9.0 — 2026-07-27
 
-- TEZKO / hard mode (key H on the title, persisted): power is limited to
+- HARD mode (key H on the title, persisted): power is limited to
   the M.11's five historical propellant charges — incremental charges 1-4
   plus a 5th for lighter shells only (the 380KG heavy shell takes at most
   charge 4). Pick the charge, lay the gun with elevation, like a real
-  battery. Applies to human players; the HUD shows POLNITEV (charge)
-  instead of MOC.
-- New SOLA page (3/5): powder and charges — the Ringpulver M.97 story,
+  battery. Applies to human players; the HUD shows CHARGE
+  instead of POWER.
+- New SCHOOL page (3/5): powder and charges — the Ringpulver M.97 story,
   shell weights, velocities and ranges, with the in-game charge ladder
   drawn from the real presets.
 - Skoda fact sheet gains POWDER and CHARGES rows.
@@ -102,8 +102,8 @@ Fixes:
 ## 1.8.0 — 2026-07-26
 
 - The game's official title is now **SKODA 305**: the big title changed,
-  "Soska fronta" joined the years line ("SOSKA FRONTA 1915 - 1917"), and
-  "Skoda" left the small subtitle ("MOZNAR 30.5CM M.11"). Window title,
+  the front joined the years line ("ISONZO FRONT 1915 - 1917"), and
+  "Skoda" left the small subtitle ("30.5CM MORTAR M.11"). Window title,
   desktop entry, bundle id and release filenames follow (skoda-305-*).
 - macOS export target (universal binary, unsigned — right-click > Open on
   first launch). Four platforms now build from one command each: Linux,
@@ -116,10 +116,10 @@ Fixes:
 
 ## 1.7.1 — 2026-07-26
 
-- Wind units unified: the soldier now reports both scales — "VOJAK: VETER
-  Z DESNE Z MOCJO 8, KAR JE PRIBL. 25 VOZLOV" (the exact HUD strength plus
+- Wind units unified: the soldier now reports both scales — "SOLDIER: WIND
+  FROM THE RIGHT AT STRENGTH 8, ABOUT 25 KNOTS" (the exact HUD strength plus
   approximate knots; 1 wind unit = about 3 knots).
-- New SOLA page (2/4): the TAB flag helper — three live demo flags at
+- New SCHOOL page (2/4): the TAB flag helper — three live demo flags at
   W = 0 / 3 / 9 with their knot equivalents, and the conversion rule.
   The HUD number is exact; the soldier's knots are an estimate.
 
@@ -170,20 +170,20 @@ Fixes:
 ## 1.6.1 — 2026-07-18
 
 - Title screen: the controls hint moved up a few pixels to give the
-  POMOC (P) line some breathing room.
+  ASSIST (P) line some breathing room.
 
 ## 1.6.0 — 2026-07-18
 
-- SOLA is now a three-page manual: the ballistics page plus two weapon fact
-  sheets — the Škoda 30.5cm M.11 and the Obice da 305/17, each with a
+- SCHOOL is now a three-page manual: the ballistics page plus two weapon fact
+  sheets — the Skoda 30.5cm M.11 and the Obice da 305/17, each with a
   period photograph in VGA sepia and specifications sourced from reference
   works (caliber, weight, shells, muzzle velocity, range, elevation, rate
   of fire, crew, service year). Left/right to flip pages, Esc to leave.
-- Title screen: the Sv. Lucija photograph sits a little lower.
+- Title screen: the Santa Lucia photograph sits a little lower.
 
 ## 1.5.2 — 2026-07-18
 
-- The ballistics manual in the menu is now called SOLA (school) — POMOC
+- The ballistics manual in the menu is now called SCHOOL — ASSIST
   at the bottom of the title screen refers to the calculator assist.
 
 ## 1.5.1 — 2026-07-18
@@ -197,15 +197,15 @@ Fixes:
 ## 1.5.0 — 2026-07-18
 
 - Last-shot feedback in the assist calculator: after you fire, the panel
-  shows your previous shot's forecast drift (NAPOVED) next to the drift the
-  shell actually picked up in flight (MERITEV, integrated during the flight,
+  shows your previous shot's forecast drift (PREDICTED) next to the drift the
+  shell actually picked up in flight (MEASURED, integrated during the flight,
   so it includes dispersion, gusts and early mountain impacts). The gap
   between the two numbers is the dispersion and the changing wind — read it
   and walk your fire in.
 
 ## 1.4.0 — 2026-07-18
 
-- Assist mode ("POMOC", key P on the title screen, persisted): the advanced
+- Assist mode ("ASSIST", key P on the title screen, persisted): the advanced
   ballistic calculator. While aiming, a live panel computes flight time and
   the exact wind drift (DX = 2*W*T^2) for your current power, angle and
   selected weapon — how many pixels left/right of the no-wind impact the
@@ -237,24 +237,24 @@ Fixes:
   (`tools/make_icon.py`; full PNG size set + Windows .ico in `assets/icon/`
   for reuse).
 - Linux icon integration: window/taskbar icon set at runtime, and the
-  release zip ships `moznar-m11.desktop` + `install.sh` for an app-menu
+  release zip ships a `.desktop` entry + `install.sh` for an app-menu
   entry with the icon.
 
 ## 1.1.0 — 2026-07-18
 
 - Boot splash sequence: Prescription Games caduceus logo + the 1916 LOC
-  photograph of the Škoda 305 mm M.11 in clean 32-shade VGA sepia
+  photograph of the Skoda 305 mm M.11 in clean 32-shade VGA sepia
   (whole photo, pillarboxed, no dithering).
 - Original title tune: melancholic A-minor march (square lead, march bass,
   noise snare), plus a splash sting.
 - Italy now fields its own gun: the Obice da 305 (tall A-frame mount,
-  longer barrel) instead of a recolored Škoda.
+  longer barrel) instead of a recolored Skoda.
 - Localization: English, Slovenian, German, Italian — flag selector on the
   title screen, choice persisted.
 - Version shown on the title screen.
 
 ## 1.0.0 — 2026-07-18
 
-- Initial release: Scorched Earth clone on the Soška fronta. VGA 320×200,
+- Initial release: Scorched Earth clone on the Isonzo Front. VGA 320×200,
   destructible alpine terrain, wind, three weapons, 1P vs the computer or hotseat,
   first to 3 rounds. All art generated in code, 8-bit generated SFX.

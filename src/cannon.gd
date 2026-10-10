@@ -1,6 +1,6 @@
 extends Node2D
 ## One siege gun. Each side fields its historical piece:
-##   0 — Škoda 30.5 cm Mörser M.11 (k.u.k.): squat kettle mount, fat stubby barrel.
+##   0 — Skoda 30.5 cm Mörser M.11 (k.u.k.): squat kettle mount, fat stubby barrel.
 ##   1 — Obice da 305 (Regio Esercito): tall A-frame box mount, longer thinner barrel.
 ## Bodies are pixel sprites from ASCII art ('1' dark, '2' mid, '3' light,
 ## '4'/'5' team ribbon); the barrel is drawn as chunky rects so it can rotate.

@@ -7,7 +7,7 @@ extends Node
 # key -> [scale, max width px, suffix appended at runtime]
 const LIMITS := {
 	"flag_title": [2, 272, ""], "flag_title_pad": [2, 272, ""], "touch_title": [2, 272, ""],
-	"hard_title": [2, 272, ""], "help_title": [2, 272, ""],
+	"hard_title": [2, 272, ""], "help_title": [2, 272, ""], "gun_skoda_t": [2, 272, ""],
 	"btn_fire": [2, 52, ""], "btn_menu": [1, 31, ""],
 	"btn_hold_wind": [1, 64, ""],
 	"w0": [1, 64, ""], "w1": [1, 64, " X2"], "w2": [1, 64, " X2"],

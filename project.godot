@@ -1,5 +1,5 @@
 ; Engine configuration file.
-; Možnar M.11 — Soška fronta
+; SKODA 305 — Isonzo Front
 ; Scorched Earth clone, WWI Isonzo Front theme, VGA 320x200.
 
 config_version=5
@@ -8,7 +8,7 @@ config_version=5
 
 config/name="Skoda 305"
 config/version="1.10.0"
-config/description="Scorched Earth clone. WWI Soška fronta. VGA 320x200, DOS style."
+config/description="Scorched Earth clone. WWI Isonzo Front. VGA 320x200, DOS style."
 run/main_scene="res://main.tscn"
 config/features=PackedStringArray("4.7")
 config/icon="res://icon.png"
@@ -17,7 +17,7 @@ boot_splash/image="res://assets/img/boot_splash.png"
 boot_splash/stretch_mode=0
 boot_splash/use_filter=false
 boot_splash/minimum_display_time=1500
-config/windows_native_icon="res://assets/icon/moznar-m11.ico"
+config/windows_native_icon="res://assets/icon/skoda-305.ico"
 
 [autoload]
 

@@ -1,4 +1,4 @@
-# Media package — Skoda 305: Soška fronta
+# Media package — Skoda 305: Isonzo Front
 
 Press/store assets for itch.io and elsewhere. Everything is generated from
 the game's own code (`tools/media.tscn` renders the logos with the in-game
@@ -16,7 +16,7 @@ the kit can always be regenerated pixel-identical.
 | `logos/logo-game-wordmark*.png` | game wordmark, transparent, native/@2x/@4x + dark-plate variant |
 | `logos/logo-prescription-games*.png` | studio caduceus logo, same variants |
 | `screenshots/gameplay-01..08.png` | eight in-game battle moments, auto-picked by action score (explosions, trails) |
-| `screenshots/menu-title.png` etc. | named UI shots: title, both splashes, all four ŠOLA pages, round intro, assist calculator, wind-flag helper |
+| `screenshots/menu-title.png` etc. | named UI shots: title, both splashes, the SCHOOL pages, round intro, assist calculator, wind-flag helper |
 | `icons/` | full icon set 16–512 px + multi-size `.ico` |
 
 ## itch.io page styling recipe

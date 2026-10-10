@@ -16,7 +16,7 @@ const DEMO_TH := 62.0
 # Obice da 305/17); values shared across languages, labels localized
 const GUNS := [
 	{
-		"title": "SKODA 30.5CM MOZNAR M.11",
+		"title": "gun_skoda_t",
 		"img": "res://assets/img/help_skoda.png",
 		"cap": "cap_skoda",
 		"accent": Vga.P1_ACCENT,
@@ -276,7 +276,8 @@ func _draw_gun_page(gun: Dictionary, tex: Texture2D) -> void:
 	var dim := Color(Vga.UI_DIM)
 	var dark := Color(Vga.UI_LO)
 
-	Pix.draw_shadow_c(self, 160, 5, gun.title, amber, dark, 2)
+	Pix.draw_shadow_c(self, 160, 5, L.t(gun.title) if L.T.has(gun.title) else gun.title,
+		amber, dark, 2)
 
 	# photograph with an archive-plate frame
 	if tex != null:

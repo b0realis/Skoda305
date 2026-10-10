@@ -1,7 +1,7 @@
 extends Node
 ## Tiny variable-width pixel font (5 px tall), DOS-HUD style (autoload "Pix").
 ## Uppercase + digits + punctuation, rendered from a white atlas with modulate.
-## Diacritic-free on purpose: CP437 never had čšž either.
+## Diacritic-free on purpose: CP437 never had carons either.
 
 const H := 5
 const SPACE_W := 3

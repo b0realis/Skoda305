@@ -9,12 +9,12 @@ extends Node
 ##
 ##   D-pad / left stick   arrows: angle + power, menu navigation
 ##   A                    fire / confirm / next      (SPACE)
-##   B                    back (SOLA, splash)        (ESC; never quits)
+##   B                    back (SCHOOL, splash)        (ESC; never quits)
 ##   X / Y                weapon: tap = cycle, hold = wind flag (TAB)
 ##                        on the title: X = hard, Y = assist
 ##   LB / RB / triggers   fine adjustment            (SHIFT)
 ##   START                battle: menu (ESC), elsewhere confirm
-##   SELECT (BACK)        title: picture SLIKA toggle (S)
+##   SELECT (BACK)        title: picture toggle (S)
 
 const SYNTH_DEVICE := 77    # marks our synthesized key events
 const STICK_ON := 0.5       # left-stick hysteresis: press beyond ON,

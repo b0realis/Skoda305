@@ -49,7 +49,7 @@ func _notification(what: int) -> void:
 		release_all()
 
 
-## True while the touch layer is in play (SOLA shows its touch page).
+## True while the touch layer is in play (SCHOOL shows its touch page).
 func active() -> bool:
 	return enabled and used
 

@@ -1,8 +1,8 @@
 # The VGA Game Playbook
 
 A reusable development guide for the "minimal design, minimal features,
-maximal fun" clone series, distilled from building *Možnar M.11 — Soška
-fronta* (Godot 4.x). This repo is the reference implementation — every
+maximal fun" clone series, distilled from building *SKODA 305 — Isonzo
+Front* (Godot 4.x). This repo is the reference implementation — every
 technique below has working code here.
 
 ---
@@ -45,7 +45,7 @@ technique below has working code here.
 4. **Integer pixel positions.** Floor every text/UI draw position. A rect at
    x.5 rasterizes an extra column at native res and glyphs smear (we hit
    this: centered text was mush until `floorf()` in the font renderer).
-5. **Uppercase, diacritic-free text** — CP437 never had čšž or umlauts;
+5. **Uppercase, diacritic-free text** — CP437 never had carons or umlauts;
    German becomes OE/UE/SS, Slovene drops carons. It reads as authenticity,
    not laziness.
 6. **Chunky everything**: particles are 1–2 px rects, lines are runs of

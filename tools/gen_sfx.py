@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Generate 8-bit DOS-style sound effects for Moznar M.11 (stdlib only).
+"""Generate 8-bit DOS-style sound effects for SKODA 305 (stdlib only).
 
 Output: assets/sfx/*.wav  (22050 Hz, mono, 16-bit container with 8-bit
 quantized levels for that crunchy Sound Blaster feel).
